@@ -1,0 +1,46 @@
+.form-autor {
+  background: #fefefe;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  @include card-shadow;
+
+  input,
+  textarea {
+    width: 100%;
+    margin-bottom: 0.8rem;
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: $font-stack;
+    font-size: 1rem;
+  }
+
+  input[type="file"] {
+    padding: 0.4rem;
+    background-color: #fafafa;
+    border-style: dashed;
+    cursor: pointer;
+  }
+
+  img {
+    display: block;
+    margin: 1rem auto;
+    max-width: 150px;
+    border-radius: 6px;
+  }
+
+  button {
+    background: $color-secondary;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+
+    &:hover {
+      background: lighten($color-secondary, 10%);
+    }
+  }
+}

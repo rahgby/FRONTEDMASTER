@@ -1,0 +1,32 @@
+.autor-card {
+  background: white;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  @include card-shadow;
+
+  h3 {
+    margin-bottom: 0.5rem;
+    color: $color-secondary;
+  }
+
+  img {
+    border-radius: 6px;
+    margin-bottom: 1rem;
+  }
+
+  button {
+    margin: 0.3rem;
+    padding: 0.4rem 1rem;
+    background: $color-primary;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:hover {
+      background: darken($color-primary, 10%);
+    }
+  }
+}

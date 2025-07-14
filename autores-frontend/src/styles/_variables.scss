@@ -1,0 +1,52 @@
+// 🎨 Colores base
+$color-primary: #3498db;
+$color-secondary: #2c3e50;
+$color-accent: #e67e22;
+$color-light: #f4f6f8;
+$color-white: #ffffff;
+$color-dark: #1c1c1c;
+
+// ✍️ Tipografía
+$font-stack: 'Segoe UI', 'Roboto', 'Helvetica', sans-serif;
+$font-size-base: 16px;
+$font-size-sm: 14px;
+$font-size-lg: 20px;
+
+// 📐 Espaciado
+$spacing-xs: 0.25rem;
+$spacing-sm: 0.5rem;
+$spacing-md: 1rem;
+$spacing-lg: 2rem;
+
+// 📱 Breakpoints responsivos
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+// 🌟 Mixins reutilizables
+@mixin card-shadow {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+@mixin transition($props...) {
+  transition: $props 0.3s ease;
+}
+
+@mixin container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: $spacing-lg;
+}
+
+@mixin responsive-text {
+  font-size: $font-size-base;
+
+  @media (max-width: $breakpoint-md) {
+    font-size: $font-size-sm;
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    font-size: $font-size-lg;
+  }
+}
